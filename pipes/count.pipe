@@ -1,0 +1,8 @@
+TOKEN "count_endpoint_read_3987" READ
+
+NODE endpoint
+SQL >
+
+    SELECT count() FROM yellow_tripdata_2018_01
+
+

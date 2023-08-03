@@ -1,0 +1,9 @@
+# Data Source created from Pipe 'mv_example'
+
+SCHEMA >
+    `day` Date,
+    `distance` AggregateFunction(avg, Float32)
+
+ENGINE "AggregatingMergeTree"
+ENGINE_PARTITION_KEY "toYYYYMM(day)"
+ENGINE_SORTING_KEY "day"
