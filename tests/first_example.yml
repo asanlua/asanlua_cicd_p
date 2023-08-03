@@ -1,0 +1,10 @@
+
+- example_no_negative_distance:
+    max_bytes_read: null
+    max_time: null
+    sql: |
+        SELECT
+            avg_distance
+        FROM average_passengers
+        WHERE
+            avg_distance < 0
