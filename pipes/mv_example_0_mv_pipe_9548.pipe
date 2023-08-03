@@ -1,0 +1,7 @@
+NODE mv_example_0_mv_pipe_9548_0
+SQL >
+
+    SELECT day, avgMerge(distance) as distance FROM mv_example_0_mv
+    group by day
+
+
